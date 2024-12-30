@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/screens/request.dart';
+import 'package:project/screens/stateRequest.dart';
 
 bool done = false;
 Color requestc = Colors.blue;
@@ -76,14 +77,7 @@ class _HomescreenState extends State<Homescreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Scaffold(
-                          body: Center(
-                            child: Text(
-                              "... طلبك قيد المعالجة,الرجاء الانتظار",
-                              style: TextStyle(fontSize: 20),
-                            ),
-                          ),
-                        ),
+                        builder: (context) => stateRequest(),
                       ));
                 }
               },
